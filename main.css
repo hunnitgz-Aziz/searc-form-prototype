@@ -1,0 +1,95 @@
+@font-face {
+  font-family: "AvenirNext-Regular";
+  src: url("/AvenirNext-Regular.otf") format("otf")
+}
+
+body {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: black;
+  font-family: 'AvenirNext-Regular', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.form-group {
+  width: 200px;
+}
+
+.form-group label {
+  color: #FFF;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.results {
+  border: 1px solid #ccc;
+  border-top: 0;
+  width: 100%;
+  padding: 5px 0;
+  max-height: 200px;
+  overflow-y: scroll;
+  position: absolute;
+  top: 2.7rem;
+  left: 0;
+  background: #ccc;
+  border-radius: 0.5rem;
+  display: none;
+}
+
+.result {
+  padding: 5px;
+  cursor: pointer;
+}
+.result:hover, .result:focus, .result:active {
+  background-color: #eee;
+}
+
+form {
+  display: flex;
+}
+
+.container {
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10px;
+  display: grid;
+}
+
+.form-container {
+  position: relative;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+header img {
+  max-width: 140px;
+}
+
+
